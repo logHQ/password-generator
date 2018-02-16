@@ -144,7 +144,7 @@ function generate_password($atts) {
 
     <table cellpadding="0" cellspacing="0" border="0" align="center" class="h100">
     <tr>
-    <td valign="middle" align="center" heihgt="100%">
+    <td valign="middle" align="center">
         <div class="main" align="center">
             <input type="text" id="pw" class="input1">
             <div id="my-slider" class="dragdealer" title="Password length">
