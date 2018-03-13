@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Password Generator
+Plugin Name: HQ Password Generator
 Plugin URI: https://login.plus/
-Description: Password Generator can be embedded in post or page with shortcodes. 
+Description: HQ Password Generator can be embedded in post or page with shortcodes. 
 Author: LogHQ
 Author URI: https://login.plus/
 Version: 1.0.1
-Text Domain: passwordgenerator
+Text Domain: hqpasswordgenerator
 */
 // Prevent direct access
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,10 +15,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 /* Enable shortcodes in widget area */
 add_filter('widget_text', 'do_shortcode');
 // add css in footer
-// add_action( 'wp_footer','passwordgenerator_assets');
+// add_action( 'wp_footer','hqpasswordgenerator_assets');
 // add css @ header
- add_action( 'wp_head','passwordgenerator_assets');
-function passwordgenerator_assets(){
+ add_action( 'wp_head','hqpasswordgenerator_assets');
+function hqpasswordgenerator_assets(){
 	
 		$pluginassets = '
 <style>
@@ -195,5 +195,5 @@ function generate_password($atts) {
 	return $pluginhtml;
 }
 
-add_shortcode( 'passwordgenerator', 'generate_password' );
+add_shortcode( 'hqpasswordgenerator', 'generate_password' );
 ?>
